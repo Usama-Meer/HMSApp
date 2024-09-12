@@ -32,6 +32,10 @@
             roleId = new DataGridViewTextBoxColumn();
             roleName = new DataGridViewTextBoxColumn();
             roleDescription = new DataGridViewTextBoxColumn();
+            buttonCreateRole = new Button();
+            buttonUpdateRole = new Button();
+            buttonDeleteRole = new Button();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridRoleView).BeginInit();
             SuspendLayout();
             // 
@@ -43,7 +47,7 @@
             dataGridRoleView.Location = new Point(117, 104);
             dataGridRoleView.Name = "dataGridRoleView";
             dataGridRoleView.RowHeadersWidth = 62;
-            dataGridRoleView.Size = new Size(518, 188);
+            dataGridRoleView.Size = new Size(514, 188);
             dataGridRoleView.TabIndex = 0;
             // 
             // roleId
@@ -67,16 +71,58 @@
             roleDescription.Name = "roleDescription";
             roleDescription.Width = 150;
             // 
+            // buttonCreateRole
+            // 
+            buttonCreateRole.Location = new Point(172, 318);
+            buttonCreateRole.Name = "buttonCreateRole";
+            buttonCreateRole.Size = new Size(120, 34);
+            buttonCreateRole.TabIndex = 1;
+            buttonCreateRole.Text = "New Role";
+            buttonCreateRole.UseVisualStyleBackColor = true;
+            // 
+            // buttonUpdateRole
+            // 
+            buttonUpdateRole.Location = new Point(308, 318);
+            buttonUpdateRole.Name = "buttonUpdateRole";
+            buttonUpdateRole.Size = new Size(120, 34);
+            buttonUpdateRole.TabIndex = 2;
+            buttonUpdateRole.Text = "Update Role";
+            buttonUpdateRole.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteRole
+            // 
+            buttonDeleteRole.Location = new Point(447, 318);
+            buttonDeleteRole.Name = "buttonDeleteRole";
+            buttonDeleteRole.Size = new Size(120, 34);
+            buttonDeleteRole.TabIndex = 3;
+            buttonDeleteRole.Text = "Delete Role";
+            buttonDeleteRole.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label1.Location = new Point(262, 40);
+            label1.Name = "label1";
+            label1.Size = new Size(222, 32);
+            label1.TabIndex = 4;
+            label1.Text = "Role Management";
+            // 
             // RoleManagmentWindow
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Controls.Add(buttonDeleteRole);
+            Controls.Add(buttonUpdateRole);
+            Controls.Add(buttonCreateRole);
             Controls.Add(dataGridRoleView);
             Name = "RoleManagmentWindow";
             Text = "RoleManagmentWindow";
             ((System.ComponentModel.ISupportInitialize)dataGridRoleView).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -85,5 +131,9 @@
         private DataGridViewTextBoxColumn roleId;
         private DataGridViewTextBoxColumn roleName;
         private DataGridViewTextBoxColumn roleDescription;
+        private Button buttonCreateRole;
+        private Button buttonUpdateRole;
+        private Button buttonDeleteRole;
+        private Label label1;
     }
 }

@@ -18,7 +18,7 @@ namespace HMSApp.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-ANFIHFJ;Database=HMSDatabase;Trusted_Connection=True;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-PADUH07\\MSSQLSERVER01;Database=HMSDatabase;Trusted_Connection=True;MultipleActiveResultSets=true");
         }
     }
 }
